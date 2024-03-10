@@ -20,6 +20,8 @@ public:
                 d2.push_back(num);
             }
         }
+        sort(d1.begin(),d1.end());
+        sort(d2.begin(),d2.end());
 
        return{d1,d2};
     }

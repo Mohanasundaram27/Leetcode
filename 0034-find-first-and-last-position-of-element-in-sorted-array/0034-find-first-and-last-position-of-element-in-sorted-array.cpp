@@ -16,8 +16,8 @@ public:
         
         // If 'mp' is not empty, store the first and last indices of 'mp' in 'k'
         if(!mp.empty()) {
-            k.push_back(mp.front()); // First index
-            k.push_back(mp.back()); // Last index
+            k.push_back(mp[0]); // First index
+            k.push_back(mp[mp.size()-1]); // Last index
         }
         // If 'mp' is empty, store {-1, -1} in 'k'
         else {

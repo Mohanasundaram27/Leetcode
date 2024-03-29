@@ -5,7 +5,7 @@ public:
         if(x<0)
             return false;
         
-        long long rem,rev=0;
+        long rem,rev=0;
         while(x!=0)
         {
             rem=x%10;

@@ -40,15 +40,5 @@ class Solution {
         return totalWays;
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        int[] nums1 = {1, 1, 1, 1, 1};
-        int target1 = 3;
-        System.out.println(solution.findTargetSumWays(nums1, target1)); // Output: 5
-
-        int[] nums2 = {1};
-        int target2 = 1;
-        System.out.println(solution.findTargetSumWays(nums2, target2)); // Output: 1
-    }
+   
 }

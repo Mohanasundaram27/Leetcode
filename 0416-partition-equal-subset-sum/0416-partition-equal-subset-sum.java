@@ -24,13 +24,5 @@ class Solution {
         return dp[targetSum];
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        int[] nums1 = {1, 5, 11, 5};
-        System.out.println(solution.canPartition(nums1)); // Output: true
-
-        int[] nums2 = {1, 2, 3, 5};
-        System.out.println(solution.canPartition(nums2)); // Output: false
-    }
+  
 }

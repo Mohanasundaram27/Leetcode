@@ -1,37 +1,37 @@
 class Solution {
 public:
-    int trap(vector<int>& height) {
-        int n=height.size();
-        int left=0,right=n-1;
-        int maxleft=0,maxright=0;
-        
+    int trap(vector<int>& nums) {
+        int left=0,right=nums.size()-1;
+        int leftmax=0,rightmax=0;
         int res=0;
-        
         while(left<=right)
         {
-            if(height[left]<=height[right])
+            if(nums[left]<=nums[right])
             {
-                
-                if(height[left]>=maxleft)
-                    maxleft=height[left];
+                if(nums[left]>=leftmax)
+                {
+                    leftmax=nums[left];
+                }
                 else
-                    res+=maxleft-height[left];
-                
+                {
+                    res+=leftmax-nums[left];
+                }
                 left++;
             }
             else
             {
-                if(height[right]>=maxright)
+                if(nums[right]>rightmax)
                 {
-                    maxright=height[right];
+                    rightmax=nums[right];
                 }
                 else
-                    res+=maxright-height[right];
-                
+                {
+                    res+=rightmax-nums[right];
+                }
                 right--;
-                
             }
         }
         return res;
+       
     }
 };

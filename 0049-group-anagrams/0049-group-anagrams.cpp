@@ -1,8 +1,7 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-       // unorderd_map<string,vector<string>> mp;
-        unordered_map<string, vector<string>> mp;
+       unordered_map<string, vector<string>> mp;
         for(auto c:strs)
         {
             string word=c;
@@ -16,5 +15,6 @@ public:
         }
         
         return ans;
+        
     }
 };
